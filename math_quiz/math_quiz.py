@@ -3,22 +3,22 @@ import random
 
 def generate_random_integer(min_value, max_value):
     """
-    Generate a random integer between min_value and max_value (inclusive).
+    Generate a random integer between min_value and max_value (inclusive)
     """
     return random.randint(min_value, max_value)
 
 
 def generate_random_operator():
     """
-    Generate a random mathematical operator (+, -, *).
+    Generate a random mathematical operator (+, -, *)
     """
     return random.choice(['+', '-', '*'])
 
 
 def calculate_result(num1, num2, operator):
     """
-    Calculate the result of the mathematical operation.
-    Returns a tuple containing the problem string and the answer.
+    Calculate the result of the mathematical operation
+    Returns a tuple containing the problem string and the answer
     """
     if operator == '+':
         result = num1 + num2
@@ -35,7 +35,7 @@ def calculate_result(num1, num2, operator):
 
 def math_quiz():
     """
-    Main function to conduct a math quiz game.
+    Main function to conduct a math quiz game
     """
     score = 0
     total_questions = 3
